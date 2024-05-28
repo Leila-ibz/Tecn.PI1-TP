@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mateando, Ando</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(8, 107, 63), rgb(122, 121, 121));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #fefefe;
+
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>¡Bienvenidos al Mundo del Mate!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="paso.html">Paso a Paso</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="centrado">
+        <video src="assets/videos/vid1.MP4" autoplay muted></video>
+    </div>
+
+    <div class="centrado">
+        <audio src="assets/audio/audio1.mp3" autoplay controls></audio>
+    </div>
+
+    <section class="centrado">
+        <div class="gallery">
+            <a href="assets/img/Pic4.JPG" target="_blank"><img src="assets/img/Pic4.JPG" alt="paso1" width="600"></a>
+            <div class="desc"><b>Seguí estos simples pasos</b></div>
+        </div>
+        <div class="gallery">
+            <a href="assets/img/Pic5.JPG" target="_blank"><img src="assets/img/Pic5.JPG" alt="paso2" width="600"></a>
+            <div class="desc"><b>y cebate un buen mate</b></div>
+        </div>
+        <div class="gallery">
+            <a href="assets/img/Pic6.JPG" target="_blank"><img src="assets/img/Pic6.JPG" alt="paso3" width="600"></a>
+            <div class="desc"><b>bien argentino!</b></div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+
+</body>
+
+</html>

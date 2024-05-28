@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mateando, Ando</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(8, 107, 63), rgb(122, 121, 121));
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+
+        }
+
+
+        header {
+            text-align: center;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #fefefe;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border: 1px solid #ccc;
+            width: 33vw;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>¡Bienvenidos al Mundo del Mate!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="paso.html">Paso a Paso</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p> Somos el grupo 5 de la materia Proyecto Integrador 1, <b>integrado por: Leila Ibañez, Diego Vergara, Giselle
+            Cristaldo y Pamela Sacaba. </b>
+        Esta página corresponde a un trabajo integrador en el que aplicamos los conceptos vistos en clase, con una
+        temática que elegimos: ¡el mate!
+    </p>
+
+
+    <div class="contenedor-formulario">
+        <form>
+
+            <h2>¿Tenés alguna consulta? ¡Contactanos!
+
+
+
+                <br>¡Muchas gracias!
+            </h2>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribí aquí tu nombre" required minlength="3">
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribí aquí tu apellido" required
+                minlength="3">
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="mail" placeholder="Escribí aquí tu mail" required>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Paraguay">Paraguay</option>
+            </select>
+            <label for="comentario">Comentario: </label>
+            <textarea name="comentario" id="comentario" placeholder="Escribí aquí tu comentario"></textarea>
+
+            <label for="motivo">Momento de mate favorito: </label>
+            <input type="radio" id="motivo" name="motivo"><i>Mañana</i>
+            <input type="radio" id="motivo" name="motivo"><i>Tarde</i>
+            <input type="radio" id="motivo" name="motivo"><i>Noche</i><br>
+
+            <br> [Disclaimer: No aceptamos discusiones sobre el origen del mate, es argentino]
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+</body>
+
+</html>

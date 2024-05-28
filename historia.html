@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mateando, Ando</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(8, 107, 63), rgb(122, 121, 121));
+            padding: 0;
+            margin: 0;
+        }
+
+
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        header {
+            text-align: center;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+        }
+
+
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #fefefe;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+
+
+        .image {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>¡Bienvenidos al Mundo del Mate!</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="paso.html">Paso a Paso</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="margin: 15px;">¿Por qué el mate es argentino?</h2>
+    <hr>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(207, 207, 207);">
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th></th>
+            <th>Consumo per cápita de mate: </th>
+            <th>Producción de yerba mate:</th>
+            <th>Población aproximada:</th>
+
+            <tr>
+                <td>Argentina</td>
+                <td>El consumo per cápita de mate en Argentina es uno de los más altos del mundo, con un promedio de
+                    alrededor de 6 a 8 kg de yerba mate por persona al año.</td>
+                <td>principales productores de yerba mate a nivel mundial.Se estima que Argentina produce alrededor del
+                    90% de la yerba mate mundial.</td>
+                <td>alrededor de 45 millones de habitantes.</td>
+            </tr>
+            <tr>
+                <td>Uruguay</td>
+                <td> ligeramente inferior al de Argentina. Se estima que un uruguayo consume alrededor de 6 kg de yerba
+                    mate por año.</td>
+                <td>Si bien Uruguay no produce tanto yerba mate como Argentina, también tiene una industria yerba mate
+                    muy desarrollada. </td>
+                <td>alrededor de 3.5 millones de habitantes.</td>
+            </tr>
+            <tr>
+                <td>Paraguay</td>
+                <td>el consumo per cápita de mate es similar al de Uruguay, con alrededor de 6 kg de yerba mate por
+                    persona al año.</td>
+                <td> Paraguay también es un productor importante de yerba mate, aunque su producción es menor en
+                    comparación con Argentina y Uruguay.</td>
+                <td>alrededor de 7.5 millones de habitantes.</td>
+            </tr>
+            <tr>
+                <td>Bolivia</td>
+                <td>Si bien el mate no es tan popular en Bolivia, El consumo per cápita de mate en Bolivia es
+                    significativamente menor, con alrededor de 1 a 2 kg de yerba mate por persona al año.</td>
+                <td>Bolivia produce una cantidad significativamente menor de yerba mate en comparación con los otros
+                    tres países mencionados</td>
+                <td>alrededor de 11.5 millones de habitantes.</td>
+            </tr>
+
+
+
+
+        </table>
+
+
+        <div class="extra-text">
+            <p>El mate es, sin dudas, parte del ADN argentino, y tenemos razones de sobra para afirmarlo. <br>
+
+                <b>Primero</b>, somos el país con la <b>mayor población entre los que toman mate y tereré.</b> <br>
+                (<b>Segundo, Francia</b>) <br>
+
+                En cada rincón de Argentina, desde la Quiaca hasta Ushuaia, el mate nos acompaña a diario.
+                Además, <em>producimos el 90% de la yerba mate del mundo,</em> ¡sí, escuchaste bien, el 90%!
+                <b>Somos los reyes de la yerba y también los mayores consumidores per cápita.</b> Nadie le pone tanta
+                pasión y
+                amor al mate como nosotros. <br>
+                <b>Pero no solo somos campeones en producción y consumo</b>, también tenemos a Messi, el mejor jugador
+                del
+                mundo. Y ni hablar de Diego Maradona, una leyenda que trasciende el tiempo. Además, el Papa Francisco,
+                elegido
+                por Dios mismo, ¡el mate tiene que ser argentino!
+                <br> <b> El mate simboliza lo que somos: compañeros, solidarios y apasionados.</b>
+                <br> Es una bebida que se comparte, y en ese acto simple se refleja nuestra manera de ser.
+                Alrededor del mate se juntan amigos, familias, se comparten charlas, risas y momentos que quedan en el
+                corazón.
+                <br>Representa nuestras raíces, nuestra forma de vivir y disfrutar en comunidad.
+                El mate es excusa para las juntadas, para la charla sincera y el compartir cotidiano.
+                En resumen, <b>el mate es argentino porque encarna nuestros valores, nuestra pasión y nuestra
+                    identidad.</b>
+                Es parte de nuestra vida diaria, un símbolo de cómo vivimos y compartimos. Por todo esto, decimos con
+                orgullo que el mate es argentino
+                (y el tereré, con cariño, se lo dejamos a nuestros hermanos paraguayos).
+            </p>
+            <p><a href="https://www.change.org/p/firm%C3%A1-para-que-el-d%C3%ADa-nacional-del-mate-se-convierta-en-el-d%C3%ADa-mundial-del-mate"
+                    target="_blank" rel="noopener noreferrer">¡Firmá para que el Día NACIONAL del mate se convierta en
+                    el Día MUNDIAL DEL MATE!</a></p>
+        </div>
+
+        <img class="image" src="assets/img/Pic7.JPG" alt="messirve">
+
+    </div>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+
+</body>
+
+</html>
